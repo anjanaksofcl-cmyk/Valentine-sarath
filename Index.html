@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Sarath 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+ text-align:center;
+ font-family:Arial;
+ background:linear-gradient(to right,#ff758c,#ff7eb3);
+ padding:20px;
+ color:white;
+}
+button{
+ padding:12px 25px;
+ font-size:18px;
+ margin:10px;
+ border:none;
+ border-radius:25px;
+ cursor:pointer;
+}
+#yes{background:#ff1744;color:white;}
+#no{background:grey;color:white;}
+img{
+ display:none;
+ max-width:90%;
+ margin-top:20px;
+ border-radius:20px;
+ box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<h2>Hi Sarath 💕</h2>
+<h1>Will You Be My Valentine? 💖</h1>
+
+<button id="yes" onclick="yesClick()">Yes 💘</button>
+<button id="no" onclick="noClick()">No 😢</button>
+
+<img id="loveImg" src="rings.jpg">
+
+<h2 id="msg" style="display:none;">
+Yayyyy 💕 You made Anjana the happiest person in the world 😍✨
+</h2>
+
+<script>
+function yesClick(){
+ document.getElementById("loveImg").style.display="block";
+ document.getElementById("msg").style.display="block";
+}
+
+function noClick(){
+ alert("No option not available 😜💖");
+}
+</script>
+
+</body>
+</html>
